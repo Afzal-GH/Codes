@@ -17,9 +17,9 @@ chi_square_weibull_lognormal <- -2 * (weibull_loglikelihood - lognormal_loglikel
 chi_square_weibull_loglogistic <- -2 * (weibull_loglikelihood - loglogistic_loglikelihood)
 chi_square_weibull_exponential <- -2 * (weibull_loglikelihood - exponential_loglikelihood)
 
-p_value_weibull_lognormal <- 1 - pchisq(chi_square_weibull_lognormal, df = 1)
-p_value_weibull_loglogistic <- 1 - pchisq(chi_square_weibull_loglogistic, df = 1)
-p_value_weibull_exponential <- 1 - pchisq(chi_square_weibull_exponential, df = 1)
+p_value_weibull_lognormal <- 1 - pchisq(chi_square_weibull_lognormal, df = 2)
+p_value_weibull_loglogistic <- 1 - pchisq(chi_square_weibull_loglogistic, df = 2)
+p_value_weibull_exponential <- 1 - pchisq(chi_square_weibull_exponential, df = 2)
 
 chi_square_exponential_weibull <- -2 * (exponential_loglikelihood - weibull_loglikelihood)
 p_value_exponential_weibull <- 1 - pchisq(chi_square_exponential_weibull, df = 1)
