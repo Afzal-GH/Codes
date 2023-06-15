@@ -50,6 +50,6 @@ table <- data.frame(
    Model = c("Full", "Using Forward Stepwise", "Using Backward Stepwise"),
    Independent_Variables = c(length(coefficients(full_model))-1, length(coefficients(forward_model))-1, length(coefficients(backward_model))-1),
    Adjusted_R2 = c(adjusted_r_squared_full, adjusted_r_squared_forward, adjusted_r_squared_backward),
-   MSE = c(mse_full, mse_forward, mse_backward)
+   MSE = c(sqrt(mse_full), sqrt(mse_forward), sqrt(mse_backward))
 )
 table
