@@ -12,7 +12,6 @@ model <- lm(Weekly_Gross_Revenue ~ Television_Advertising + Newspaper_Advertisin
 summary(model)
 
 # Conduct hypothesis tests for the regression coefficients
-# Overall significance of the model
 anova(model)
 
 # Significance of Television Advertising coefficient
