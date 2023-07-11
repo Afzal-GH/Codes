@@ -33,7 +33,6 @@ params <- list(pi = pi_solution)
 y0 <- c(0, 0) # Initial values for V and U
 t <- seq(0, 30, by = 0.01) # Time grid
 ode_result <- ode(y = y0, times = t, func = ode_system, parms = params)
-
 plot(t, ode_result[, "V1"], type = "l", xlab = "Time", ylab = "V_t",
      main = "Unit-Linked Insurance: V_t over Time")
 lines(t, ode_result[, "V2"], col = "blue")
