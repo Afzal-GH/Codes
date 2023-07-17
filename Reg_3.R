@@ -27,8 +27,7 @@ forecast_q3 <- round(coefficients[1] + coefficients[4], 0)
 forecast_q4 <- round(coefficients[1], 0)
 
 # Print the results
-cat("Estimated regression equation: Y_hat =", coefficients[1], coefficients[2], "* x1 ",
-    coefficients[3], "* x2 ", coefficients[4], "* x3\n")
+cat("Estimated regression equation: Y_hat =", coefficients[1], coefficients[2], "* x1 ", coefficients[3], "* x2 ", coefficients[4], "* x3\n")
 cat("Quarterly forecasts for next year:\n")
 cat("Forecast for quarter 1:", forecast_q1, "pianos\n")
 cat("Forecast for quarter 2:", forecast_q2, "pianos\n")
