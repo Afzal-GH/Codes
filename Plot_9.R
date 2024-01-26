@@ -42,7 +42,7 @@ sample_means <- matrix(NA, nrow = num_iterations, ncol = 30)
 sample_variances <- matrix(NA, nrow = num_iterations, ncol = 30)
 
 # Set seed for reproducibility
-set.seed(123)
+set.seed(786)
 
 # Loop over sample sizes
 for (sample_size in 1:30) {
