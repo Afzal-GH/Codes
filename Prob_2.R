@@ -20,9 +20,3 @@ P_T_gt_21 <- 1 - pnorm(Z_21)
 Z_14 <- (14 - E_T) / sqrt(Var_T)
 Z_20 <- (20 - E_T) / sqrt(Var_T)
 P_14_to_20 <- pnorm(Z_20) - pnorm(Z_14)
-
-E_T
-Var_T
-P_8.5_to_10
-P_T_gt_21
-P_14_to_20
