@@ -1,1 +1,1 @@
-## Welcom to the world of Py and R
+## Welcome to the world of Py and R
